@@ -29,6 +29,9 @@ public:
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
     void setPropietario(Propietario * pPropietario);
 
+    Perro(std::string nombre, int edad, std::string raza, std::string tamanio, std::string color );
+
+
 
     int getEdad();
     void setEdad(int edad);

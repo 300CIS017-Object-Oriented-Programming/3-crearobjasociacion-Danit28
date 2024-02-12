@@ -23,6 +23,10 @@ void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
     this->pPropietario = new Propietario(nombre, docIdentidad);
 }
 
+Perro::Perro(std::string nombre, int edad, std::string raza, std::string tamanio, std::string color ):
+    nombre(nombre), edad(edad), raza(raza), tamanio(tamanio), color(color) {}
+
+
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
