@@ -23,3 +23,11 @@ std::string Propietario::getNombre()  {
 void Propietario::setNombre(std::string nombre) {
     this->nombre = nombre;
 }
+
+void Propietario::setEdad(int edad) {
+    this->edad = edad;
+}
+
+void Propietario::setDoc(std::string docIdentidad) {
+    this->docIdentidad = docIdentidad;
+}

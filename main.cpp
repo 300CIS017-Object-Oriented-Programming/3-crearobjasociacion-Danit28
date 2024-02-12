@@ -14,6 +14,10 @@ int main() {
     firulais.setRaza("Mastin napolitano");
     maxPerro->ladrar();
 
+    Propietario *martin = new Propietario("Martin");
+    martin->setEdad(25);
+    martin->setDoc("1005110032");
+
     //Agregar un nuevo pPropietario a Firulais
     firulais.agregarPropietario("Carlos Zapata", "102842313");
 
