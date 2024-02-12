@@ -20,6 +20,10 @@ std::string Propietario::getNombre()  {
     return nombre;
 }
 
+std::string Propietario::getDoc() {
+    return docIdentidad;
+}
+
 void Propietario::setNombre(std::string nombre) {
     this->nombre = nombre;
 }

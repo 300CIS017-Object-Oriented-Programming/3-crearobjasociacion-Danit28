@@ -21,6 +21,10 @@ int main() {
     infoMartin = martin->mostrarInfo();
     std::cout << infoMartin << std::endl;
 
+    maxPerro->agregarPropietario("Daniela Tellez Cobo","1006107081");
+
+    std::cout<< "El documento de identidad del Propietario del perro "<< maxPerro->getNombre() << " es " << maxPerro->getPropietario()->getDoc()<<std::endl;
+
 
 
     //Agregar un nuevo pPropietario a Firulais

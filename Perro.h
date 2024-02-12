@@ -23,7 +23,8 @@ public:
     void ladrar();
     Propietario * getPropietario();
 
-    // Sirve para.......
+    // Sirve para crear el objeto Propietario relacionandolo directamente con el objeto Perro
+    // No es necesario crear el objeto Propietario aparte para hacer la relacion
     void agregarPropietario(std::string nombre, std::string docIdentidad);
 
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
