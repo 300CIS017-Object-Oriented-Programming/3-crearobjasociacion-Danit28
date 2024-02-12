@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Perro.h"
 #include "Propietario.h"
+#include "Veterinario.h"
+#include "Raza.h"
 
 int main() {
 
@@ -30,13 +32,25 @@ int main() {
     std::cout<< "El veterinario del perro "<<maxPerro->getNombre()<< " es " << maxPerro->getVeterinario()->getNombre();
     std::cout<< " y tiene  "<<maxPerro->getVeterinario()->getAniosExperiencia() << " anios de experiencia " << std::endl;
 
-
-
     //Agregar un nuevo pPropietario a Firulais
     firulais.agregarPropietario("Carlos Zapata", "102842313");
 
     // Consultar el nombre del pPropietario del perro Firulais
     std::cout<< "El nombre del pPropietario del perro "<<firulais.getNombre() << " es " << firulais.getPropietario()->getNombre()<<std::endl;
+
+    Raza *raza1 = new Raza();
+    Raza *raza2 = new Raza();
+
+    raza1->setPaisOrigen("Italia");
+    raza1->setNombre("Mastin Napolitano");
+
+    raza2->setNombre("Maltes");
+    raza2->setPaisOrigen("Italia");
+
+    firulais.setRaza(raza1);
+
+    std::cout<< "La raza del perro "<<firulais.getNombre() << " es " << firulais.getRaza()->getNombre()<< " de pais de origen " << firulais.getRaza()->getpaisOrigen()<< std::endl;
+
 
     return 0;
 }

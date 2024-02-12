@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(3_CrearObjAsociacion main.cpp Perro.cpp Perro.h Propietario.cpp Propietario.h
         Veterinario.h
-        Veterinario.cpp)
+        Veterinario.cpp
+        Raza.cpp
+        Raza.h)

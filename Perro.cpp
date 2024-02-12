@@ -31,6 +31,18 @@ Veterinario *Perro::getVeterinario() {
     return this->pVeterinario;
 }
 
+void Perro::agregarRaza(std::string nombre, std::string paisOrigen) {
+    this->pRaza = new Raza(nombre, paisOrigen);
+}
+
+Raza *Perro::getRaza() {
+    return this->pRaza;
+}
+
+void Perro::setRaza(Raza *pRaza) {
+    this->pRaza = pRaza;
+}
+
 Perro::Perro(std::string nombre, int edad, std::string raza, std::string tamanio, std::string color ):
     nombre(nombre), edad(edad), raza(raza), tamanio(tamanio), color(color) {}
 
