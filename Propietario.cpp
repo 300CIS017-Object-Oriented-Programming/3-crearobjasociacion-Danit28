@@ -31,3 +31,9 @@ void Propietario::setEdad(int edad) {
 void Propietario::setDoc(std::string docIdentidad) {
     this->docIdentidad = docIdentidad;
 }
+
+std::string Propietario::mostrarInfo(){
+    std::string info;
+    info = nombre + "," + docIdentidad + "," + std::to_string(edad);
+    return info;
+}

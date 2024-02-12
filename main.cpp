@@ -7,6 +7,7 @@ int main() {
     // Instanciar
     Perro firulais;
     Perro *maxPerro = new Perro("Max",2,"Labrador","Mediano","Cafe");
+    std::string infoMartin;
     firulais.setNombre("Firulais");
     firulais.setColor("Negro");
     firulais.setEdad(5);
@@ -17,6 +18,10 @@ int main() {
     Propietario *martin = new Propietario("Martin");
     martin->setEdad(25);
     martin->setDoc("1005110032");
+    infoMartin = martin->mostrarInfo();
+    std::cout << infoMartin << std::endl;
+
+
 
     //Agregar un nuevo pPropietario a Firulais
     firulais.agregarPropietario("Carlos Zapata", "102842313");
