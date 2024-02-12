@@ -12,6 +12,10 @@ Propietario::Propietario(std::string nombre, std::string docIdentidad) {
  this->docIdentidad = docIdentidad;
 }
 
+Propietario::Propietario(std::string nombre){
+    this->nombre = nombre;
+}
+
 std::string Propietario::getNombre()  {
     return nombre;
 }
