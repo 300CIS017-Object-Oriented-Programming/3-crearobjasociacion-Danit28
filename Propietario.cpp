@@ -41,3 +41,7 @@ std::string Propietario::mostrarInfo(){
     info = nombre + "," + docIdentidad + "," + std::to_string(edad);
     return info;
 }
+
+int Propietario::getEdad() {
+    return edad;
+}
