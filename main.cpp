@@ -25,6 +25,11 @@ int main() {
 
     std::cout<< "El documento de identidad del Propietario del perro "<< maxPerro->getNombre() << " es " << maxPerro->getPropietario()->getDoc()<<std::endl;
 
+    maxPerro->agregarVeterinario("Carlos Ramirez", 12);
+
+    std::cout<< "El veterinario del perro "<<maxPerro->getNombre()<< " es " << maxPerro->getVeterinario()->getNombre();
+    std::cout<< " y tiene  "<<maxPerro->getVeterinario()->getAniosExperiencia() << " anios de experiencia " << std::endl;
+
 
 
     //Agregar un nuevo pPropietario a Firulais
